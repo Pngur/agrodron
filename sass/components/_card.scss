@@ -1,5 +1,6 @@
 
 .card {
+
    @include flexbox;
    align-items: center;
    justify-content: center;
@@ -27,6 +28,8 @@
          }
       }
 
+
+
 		&__text-box {
          display: flex;
          flex-direction: column;
@@ -37,14 +40,14 @@
          border-bottom-right-radius: 30px;
          padding: 3rem 2rem 3rem 2rem;
 
-         border-left: 6rem solid rgba(255, 255, 255, .6);
+         border-left: 6rem solid rgba(255, 255, 255, .8);
          -webkit-background-clip: padding-box;
          background-clip: padding-box;
          border-radius: 30px;
 
          @include respond(bp1) {
-            border-left: 0rem solid rgba(255, 255, 255, .6);
-            border-top: 3rem solid rgba(255, 255, 255, .6);
+            border-left: 0rem solid rgba(255, 255, 255, .8);
+            border-top: 3rem solid rgba(255, 255, 255, .8);
          }
       }
       
@@ -59,15 +62,21 @@
          border-bottom-left-radius: 30px;
          padding: 2rem 4rem 2rem 2rem;
 
-         border-right: 6rem solid rgba(255, 255, 255, .6);
+         border-right: 6rem solid rgba(255, 255, 255, .8);
          -webkit-background-clip: padding-box;
          background-clip: padding-box;
          border-radius: 30px;
          @include respond(bp1) {
-            border-right: 0rem solid rgba(255, 255, 255, .6);
-            border-top: 3rem solid rgba(255, 255, 255, .6);
+            border-right: 0rem solid rgba(255, 255, 255, .8);
+            border-top: 3rem solid rgba(255, 255, 255, .8);
          }
 
-		}
+      }
+      
+      &__image {
+         @include respond(bp1) {
+            width: 100%;
+         }
+      }
 }
 

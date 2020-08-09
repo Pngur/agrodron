@@ -4,6 +4,7 @@ MEDIA QUERY MANAGER
 
 breakpoint-1:  75em     - 1200px
 breakpoint-2:  68,75em  - 1100px‬
+                62.5em  - 1000px
 breakpoint-3:  48em     - 768px
 breakpoint-4:  25em     - 400px
 
@@ -84,6 +85,9 @@ li {
     text-transform: uppercase; }
     .navigation__list > *:not(:last-child) {
       margin-right: 2rem; }
+      @media (max-width: 62.5em) {
+        .navigation__list > *:not(:last-child) {
+          margin-right: 1rem; } }
   .navigation__link:hover {
     border-bottom: 1px solid #fff; }
   .navigation__link {
@@ -138,14 +142,14 @@ li {
     border-top-right-radius: 30px;
     border-bottom-right-radius: 30px;
     padding: 3rem 2rem 3rem 2rem;
-    border-left: 6rem solid rgba(255, 255, 255, 0.6);
+    border-left: 6rem solid rgba(255, 255, 255, 0.8);
     -webkit-background-clip: padding-box;
     background-clip: padding-box;
     border-radius: 30px; }
     @media (max-width: 62.5em) {
       .card__text-box {
-        border-left: 0rem solid rgba(255, 255, 255, 0.6);
-        border-top: 3rem solid rgba(255, 255, 255, 0.6); } }
+        border-left: 0rem solid rgba(255, 255, 255, 0.8);
+        border-top: 3rem solid rgba(255, 255, 255, 0.8); } }
   .card__text-box-left {
     display: flex;
     flex-direction: column;
@@ -155,14 +159,17 @@ li {
     border-top-left-radius: 30px;
     border-bottom-left-radius: 30px;
     padding: 2rem 4rem 2rem 2rem;
-    border-right: 6rem solid rgba(255, 255, 255, 0.6);
+    border-right: 6rem solid rgba(255, 255, 255, 0.8);
     -webkit-background-clip: padding-box;
     background-clip: padding-box;
     border-radius: 30px; }
     @media (max-width: 62.5em) {
       .card__text-box-left {
-        border-right: 0rem solid rgba(255, 255, 255, 0.6);
-        border-top: 3rem solid rgba(255, 255, 255, 0.6); } }
+        border-right: 0rem solid rgba(255, 255, 255, 0.8);
+        border-top: 3rem solid rgba(255, 255, 255, 0.8); } }
+  @media (max-width: 62.5em) {
+    .card__image {
+      width: 100%; } }
 
 .header {
   height: 100vh;
@@ -171,6 +178,9 @@ li {
   background-size: cover;
   overflow: hidden;
   position: relative; }
+  @media (max-width: 62.5em) {
+    .header {
+      height: auto; } }
 
 .header-top {
   display: -webkit-box;
@@ -365,6 +375,9 @@ li {
 
 .section__paragraph {
   max-width: 73rem; }
+  @media (max-width: 62.5em) {
+    .section__paragraph {
+      max-width: 65rem; } }
 
 .section__image {
   width: 13.8rem;
@@ -381,7 +394,7 @@ li {
 
 @media (max-width: 62.5em) {
   .service-card-left {
-    flex-direction: column-reverse;
+    flex-direction: column;
     justify-content: center;
     align-items: center; } }
 

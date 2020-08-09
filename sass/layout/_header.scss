@@ -5,6 +5,10 @@
    background-size: cover;
    overflow: hidden;
    position: relative;
+
+   @include respond(bp1) {
+      height: auto;
+   }
 }
 
 .header-top {

@@ -11,8 +11,12 @@
    }
 
    &__paragraph {
-      max-width: 73rem;
+      max-width: 73rem;     
+      @include respond(bp1) {
+         max-width: 65rem;
+      }
    }
+   
    &__image {
       width: 13.8rem;
       height: auto;
@@ -33,7 +37,7 @@
 
 .service-card-left {
    @include respond(bp1) {
-      flex-direction: column-reverse;
+      flex-direction: column;
       justify-content: center;
       align-items: center;
      }
