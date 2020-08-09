@@ -1,0 +1,31 @@
+.navigation {
+   margin-top: 2rem;
+
+   &__list {
+      @include flexbox;
+      list-style: none;
+      text-transform: uppercase;
+      
+      & > *:not(:last-child) {
+         margin-right: 2rem;
+      }
+   }
+
+   // &__item { 
+   // }
+
+   &__link:hover {
+      border-bottom: 1px solid #fff;
+   }
+
+   &__link {
+      font-size: 1.2rem;
+      color: $color-white;
+      text-decoration: none;
+      letter-spacing: .1rem;
+      transition: border-bottom .2s;
+      border-bottom: 1px solid transparent;
+
+   }
+
+}

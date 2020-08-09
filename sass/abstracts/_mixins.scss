@@ -1,0 +1,102 @@
+/* 
+MEDIA QUERY MANAGER 
+
+breakpoint-1:  75em     - 1200px
+breakpoint-2:  68,75em  - 1100px‬
+breakpoint-3:  48em     - 768px
+breakpoint-4:  25em     - 400px
+
+*/
+
+@mixin respond($breakpoint) {
+    @if $breakpoint == bp1 {
+        @media (max-width: 62.5em) { @content; }
+    }
+
+    @if $breakpoint == bp2 {
+        @media (max-width: 68.75em) { @content; }
+    }
+
+    @if $breakpoint == bp3 {
+        @media (max-width: 48em) { @content; }
+    }
+
+    @if $breakpoint == bp4 {
+        @media (max-width: 25em) { @content; }
+    }
+}
+
+
+@mixin flexbox {
+   display: -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+   display: -ms-flexbox;  /* TWEENER - IE 10 */
+   display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
+   display: flex;  
+}
+
+@mixin flexCenter {
+   align-items: center;
+   justify-content: center;
+}
+
+@mixin listLayout {
+   text-decoration: none;
+   text-transform: uppercase;
+   font-weight: 700;   
+   letter-spacing: .2rem;     
+}
+
+@mixin burgerIcon($color-burger) {
+   position: relative;
+
+   &,
+   &::before,
+   &::after {
+       width: 25px;
+       height: 3px;
+       background-color: $color-burger;
+       display: inline-block;
+   }
+
+   &::before,
+   &::after {
+       content: "";
+       position: absolute;
+       left: 0;
+   }
+
+   &::before {top: -.8rem;}
+   &::after {top: .8rem;}
+}
+
+@mixin crossIcon($color-burger) {
+   position: relative;
+   transform: rotate(135deg);
+   &,
+   &::after {
+        width: 25px;
+        height: 3px;
+       background-color: $color-burger;
+       display: inline-block;
+   }
+
+   &::after {
+       content: "";
+       position: absolute;
+       left: 0;
+   }
+
+   &::after {transform: rotate(90deg);}
+}
+
+@mixin bgimgprop {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+}
+
+
+@mixin listStyle {
+    list-style-type: '-';
+    padding-left: .5rem;
+}

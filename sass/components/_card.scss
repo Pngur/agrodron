@@ -1,0 +1,73 @@
+
+.card {
+   @include flexbox;
+   align-items: center;
+   justify-content: center;
+
+      &__card-box {
+         @include flexbox;
+         @include flexCenter;
+         position: relative;
+         left: -6rem;
+         max-width: 80rem;
+         min-height: 20.5rem;
+         z-index: 100;
+
+         @include respond(bp1) {
+            left: 0;
+            top: -4rem;
+         }
+
+         &--left {
+            left:6rem;
+            @include respond(bp1) {
+               left: 0;
+               top: -4rem;
+            }
+         }
+      }
+
+		&__text-box {
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+         background-color: #fff;
+         min-height: 20.5rem;
+         border-top-right-radius: 30px;
+         border-bottom-right-radius: 30px;
+         padding: 3rem 2rem 3rem 2rem;
+
+         border-left: 6rem solid rgba(255, 255, 255, .6);
+         -webkit-background-clip: padding-box;
+         background-clip: padding-box;
+         border-radius: 30px;
+
+         @include respond(bp1) {
+            border-left: 0rem solid rgba(255, 255, 255, .6);
+            border-top: 3rem solid rgba(255, 255, 255, .6);
+         }
+      }
+      
+		&__text-box-left {
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+
+         background-color: #fff;
+         min-height: 20.5rem;
+         border-top-left-radius: 30px;
+         border-bottom-left-radius: 30px;
+         padding: 2rem 4rem 2rem 2rem;
+
+         border-right: 6rem solid rgba(255, 255, 255, .6);
+         -webkit-background-clip: padding-box;
+         background-clip: padding-box;
+         border-radius: 30px;
+         @include respond(bp1) {
+            border-right: 0rem solid rgba(255, 255, 255, .6);
+            border-top: 3rem solid rgba(255, 255, 255, .6);
+         }
+
+		}
+}
+
