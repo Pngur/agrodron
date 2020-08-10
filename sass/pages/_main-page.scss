@@ -16,7 +16,7 @@
          max-width: 65rem;
       }
    }
-   
+
    &__image {
       width: 13.8rem;
       height: auto;
@@ -54,6 +54,11 @@
    background-size: cover;
    height: 32.7rem;
    margin: 7rem 0 7rem 0;
+
+   @include respond(bp1) {
+      width: 100%;
+      height: auto;
+   }
 
    &--1 {
       background-image: url('../img/big-image-1.png');
