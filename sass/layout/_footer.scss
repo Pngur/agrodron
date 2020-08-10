@@ -11,6 +11,9 @@
    overflow: hidden;
    height: 100%;
 
+   @include respond(bp2) {
+   }
+
    &__heading {
       padding-top: 6rem;
    }
