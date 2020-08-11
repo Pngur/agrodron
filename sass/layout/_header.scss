@@ -1,14 +1,16 @@
 .header {
    height: 100vh;
+   height: calc(var(--vh, 1vh) * 100);
    background-image: url('../img/header-image.png');
    background-repeat: no-repeat;
    background-size: cover;
    overflow: hidden;
    position: relative;
 
-   // @include respond(bp1) {
-   //    height: auto;
-   // }
+   @include respond(bp4) {
+      height: 88vh;
+      height: calc(var(--vh, 1vh) * 100);
+   }
 }
 
 .header-top {
@@ -19,30 +21,54 @@
    position: relative;
    overflow: hidden;
 
+   @include respond(bp2) {
+      justify-content: flex-start;
+   }
+
    &__logo-box {
       @include flexbox;
       @include flexCenter;
       margin-top: 3.6rem;
+
+      @include respond(bp2) {
+         flex-direction: row-reverse;
+      }
    }
 
    &__main-logo {
       margin-right: 5rem;
       padding-top: 1rem;
+
+      @include respond(bp2) {
+         margin-right: 0rem;
+      }
    }
 
    &__main-image {
       width: 100%;
       height: auto;
+
+      @include respond(bp3) {
+         width: 80%;
+      }
+      @include respond(bp4) {
+         width: 70%;
+      }
    }
 
    &__second-image {
       width: 100%;
       height: auto;
+      @include respond(bp3) {
+         width: 80%;
+      }
+      @include respond(bp4) {
+         width: 70%;
+      }
    }
 }
 
 .header-text {
-
    &__paragraph {
       margin-top: 3.5rem;
       max-width: 583px;
@@ -50,32 +76,51 @@
       font-weight: 700;
       line-height: 1.3;
 
-      @include respond(bp3) {
+      @include respond(bp2) {
          margin: auto;
-         margin-top: 10rem;
+         margin-top: 5rem;
          text-align: center;
-         
       }
    }
-
 
    &__header {
       @include flexbox;
       flex-direction: column;
 
-      @include respond(bp3) {
+      @include respond(bp2) {
          @include flexCenter;
+      }
+
+      @include respond(bp4) {
+         font-size: 3rem;
       }
    }
 }
 .header-bottom {
    position: absolute;
+   bottom: 0px;
    height: 6.95rem;
-   bottom: 0;
+   display: block;
+   background-image: url(../img/Rectangle.png);
+   background-repeat: no-repeat;
+   background-size: cover;
+   width: 100%;
 
+   @include respond(bp2) {
+      height: 5.95rem;
+      bottom: 0rem;
+   }
+
+   @include respond(bp3) {
+      height: 4.95rem;
+      bottom: 0rem;
+   }
+   @include respond(bp4) {
+      background-image: url(../img/Rectangle-mobile.png);
+      height: 3.95rem;
+   }
+   
    &__image {
-      width: 100%;
-      height: auto;
    }
 }
 
@@ -87,22 +132,31 @@
    text-align: center;
    margin-top: 1rem;
    cursor: pointer;
-   
+
+   @include respond(bp2) {
+      @include flexbox;
+      @include flexCenter;
+      margin-top: 0;
+   }
    
    &__text {
       color: $color-white;
       font-weight: 700;
       text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.25);
-      margin-bottom: .1rem;
+
+      @include respond(bp2) {
+         margin-right: .5rem;
+      }
+
+      @include respond(bp3) {
+         font-size: 1.5rem;
+      }
    }
 
-   &:hover &__text {
-      transform: translateY(-3px);
-      transition: all .3s;
-   }
+   &__icon {
+      @include respond(bp3) {
+         width: 15%;
+      }
 
-   &:hover &__icon {
-      transform: translateY(3px);
-      transition: all .3s;
    }
 }

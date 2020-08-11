@@ -46,6 +46,9 @@
 .section-box {
    & > *:not(:last-child) {
       margin-bottom: 4rem;
+      @include respond(bp3) {
+         margin-bottom: 2rem;
+      }
    }
 }
 
@@ -55,15 +58,21 @@
    height: 32.7rem;
    margin: 7rem 0 7rem 0;
 
-   // @include respond(bp1) {
-   //    width: 100%;
-   //    height: auto;
-   // }
+   @include respond(bp3) {
+      width: 100%;
+   }
 
    &--1 {
       background-image: url('../img/big-image-1.png');
       @include respond(bp2) {
          background-position-x: -20rem;
+      }
+      
+      @include respond(bp5) {
+         background-position-x: -31rem;
+      }
+      @include respond(bp6) {
+         background-position-x: -41rem;
       }
    }
 
@@ -73,6 +82,9 @@
 
    &--3 {
       background-image: url('../img/big-image-3.png');
+      @include respond(bp3) {
+         background-position-x: -20rem;
+      }
    }
 
    &--4 {
@@ -131,12 +143,20 @@
    &--3 {
       padding-top: 8rem;
       align-items: flex-end;
+      @include respond(bp3) {
+         // padding-top: 4rem;
+      }
    }
 
    &__heading {
       padding: 4rem 27rem 2rem 0;
+
       @include respond(bp1) {
          padding: 4rem 17rem 2rem 0;
+      }
+      @include respond(bp4) {
+         font-size: 2.5rem;
+         padding: 4rem 5rem 2rem 0;
       }
 
       &--3 {
@@ -144,7 +164,7 @@
          padding-right: 33rem;
          padding-bottom: 1rem;
          @include respond(bp1) {
-            padding-right: 11rem;
+            padding-right: 15rem;
          }
       }
    }
@@ -153,24 +173,35 @@
       color: $color-white;
       padding: 0rem 14rem 5rem 0;
       line-height: 1.5;
-      
-      & > * {@include listStyle;}
-
-      &--2 {padding-left: 2rem;}
       @include respond(bp1) {
          padding-right: 5rem;
       }
+      @include respond(bp4) {
+         padding-right: 0rem;
+         font-size: 1rem;
+      }
+      
+      & > * {@include listStyle;}
+      
+      &--2 {padding-left: 2rem;}
 
       & > * {
          line-height: 1.2;
-   }
+      }
    }  
    &__paragraph {
       max-width: 381px;
       margin-right: 32rem;
 
       @include respond(bp1) {
-         margin-right: 5rem;
+         margin-right: 9rem;
      }
+
+      @include respond(bp4) {
+         margin-right: 4.5rem; 
+         font-size: 2.5rem;    
+      }
+
+
    }
 }
