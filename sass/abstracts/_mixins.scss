@@ -8,7 +8,7 @@ breakpoint-1:  75em     - 1200px
 breakpoint-2:  68,75em  - 1100px‬
                 62.5em  - 1000px
 breakpoint-3:  48em     - 768px
-breakpoint-4:  31.25em     - 500px
+breakpoint-4:  33,75em     - 500px
 breakpoint-5:  56.3125em    - 900px
 breakpoint-6:  49.6875em     - 795px
 
@@ -28,7 +28,7 @@ breakpoint-6:  49.6875em     - 795px
     }
 
     @if $breakpoint == bp4 {
-        @media (max-width: 31.25em) { @content; }
+        @media (max-width: 33.75em  ) { @content; }
     }
     @if $breakpoint == bp5 {
         @media (max-width: 56.3125em) { @content; }

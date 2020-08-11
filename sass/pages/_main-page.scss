@@ -8,18 +8,11 @@
       background-color: #fff;
       border-radius: 25px;
       padding: 2rem 0;
+
    }
 
    &__paragraph {
       max-width: 73rem;     
-      // @include respond(bp1) {
-      //    max-width: 65rem;
-      // }
-   }
-
-   &__image {
-      width: 13.8rem;
-      height: auto;
    }
 
    & > *:not(:last-child) {
@@ -114,12 +107,26 @@
       @include flexbox;
       align-items: center;
       justify-content: space-around;
+      flex-direction: row-reverse;
       
       background-color: $color-white;
       border-radius: 3rem;
-      height: 20.5rem;
+      padding: 2rem;
       max-width: 106.8rem;
       margin: auto;
+
+      @include respond(bp4) {
+         display: block;
+         overflow: auto;
+      }
+   }
+
+   &__image {
+      width: 13.8rem;
+      @include respond(bp4) {
+         float: left;
+         padding: 0 2rem 1rem 0;
+      }
    }
 
    &__paragraph {
@@ -182,7 +189,7 @@
       }
       
       & > * {@include listStyle;}
-      
+
       &--2 {padding-left: 2rem;}
 
       & > * {
