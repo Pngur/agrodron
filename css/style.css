@@ -309,7 +309,7 @@ li {
   z-index: 1000; }
 
 #button::after {
-  content: url(../../resources/img/arrow-white.svg);
+  content: url(../resources/img/arrow-white.svg);
   transform: rotate(180deg); }
 
 #button:hover {
