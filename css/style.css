@@ -104,6 +104,10 @@ li {
       z-index: 1000; }
       .navigation.toggle-js {
         display: block; } }
+  @media (max-width: 33.75em) {
+    .navigation {
+      background: #fff;
+      box-shadow: inset -400px 213px 215px -62px #071104; } }
   .navigation__list {
     display: -webkit-box;
     /* OLD - iOS 6-, Safari 3.1-6, BB7 */

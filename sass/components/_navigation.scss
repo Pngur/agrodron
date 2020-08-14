@@ -8,7 +8,6 @@
       left: 50%;
       transform: translate(-50%, -50%);
       background: #222;
-
       height: 100vh;
       width: 100vw;
       z-index: 1000;
@@ -16,6 +15,12 @@
       &.toggle-js {
          display: block;
       }
+   }
+
+   @include respond(bp4) {
+      background: #fff;
+      box-shadow: inset -400px 213px 215px -62px #071104;
+
    }
 
    &__list {
