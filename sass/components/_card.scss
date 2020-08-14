@@ -39,6 +39,9 @@
          @include respond(bp8) {
             padding: 7rem 2rem 3rem 4rem;
          }
+         @include respond(bp4) {
+            padding: 5.5rem 2rem 2rem 3rem;
+         }
       }
       
 		&__text-box-left {
@@ -50,7 +53,7 @@
          padding: 2rem 4rem 2rem 3rem;
          opacity: .9;
          min-height: 20.5rem;
-         @include respond(bp4) {padding: 7rem 4rem 2rem 3rem;};
+         @include respond(bp4) {padding: 6rem 4rem 2rem 3rem;};
       }
 
       &__image-box {

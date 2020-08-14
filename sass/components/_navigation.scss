@@ -27,10 +27,13 @@
          flex-direction: column;
          text-align: end;
          margin-top: 15vh;
-         margin-right: .2vw;
+         margin-right: 1.5vw;
       }
 
-      @include respond(bp4) {margin-top: 22vh;}
+      @include respond(bp4) {
+         margin-top: 20rem;
+         margin-right: -2vw;
+      }
    }
    
    &__item {

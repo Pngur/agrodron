@@ -1,7 +1,7 @@
 .header {
    height: 100vh;
    height: calc(var(--vh, 1vh) * 100);
-   background-image: url('../resources/img/headerfiltered.jpg');
+   background-image: url('../resources/img/headerfiltered.png');
    background-repeat: no-repeat;
    background-size: cover;
    background-position: center;
@@ -11,8 +11,15 @@
    @include respond(bp4) {
       height: 88vh;
       height: calc(var(--vh, 1vh) * 100);
-      background-position: right;
    }
+
+   @media (max-height: 30.31em) {
+      background-position-x: right;
+   }
+
+   // @media (min-height: 30.31em) {
+   //    
+   // }
 }
 
 .header-top {
@@ -159,11 +166,16 @@
    text-align: center;
    margin-top: 1rem;
    cursor: pointer;
+   @include flexbox;
+   @include flexCenter;
 
-   @include respond(bp2) {
-      @include flexbox;
-      @include flexCenter;
-      margin-top: 0;
+   @include respond(bp2) {margin-top: 0rem;}
+   &__link {
+      @include respond(bp2) {
+         @include flexbox;
+         @include flexCenter;
+         margin-top: 0rem;
+      }
    }
    
    &__text {

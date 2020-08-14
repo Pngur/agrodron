@@ -10,6 +10,7 @@ breakpoint-6:  49.6875em     - 795px
 breakpoint-7:  47.93em     - 767px
 breakpoint-8:  43.75em     - 700px
 breakpoint-9:  25em     - 400px
+breakpoint-10:  65.62em     - 1050px
 */
 
 @mixin respond($breakpoint) {
@@ -39,6 +40,9 @@ breakpoint-9:  25em     - 400px
     }
     @if $breakpoint == bp9 {
         @media (max-width: 25.75em) { @content; }
+    }
+    @if $breakpoint == bp10 {
+        @media (max-width: 65.62em) { @content; }
     }
 }
 

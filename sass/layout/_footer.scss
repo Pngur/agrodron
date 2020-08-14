@@ -11,6 +11,14 @@
    overflow: hidden;
    height: 100%;
 
+   &__link,
+   &__link:link,
+   &__link:visited {
+      text-decoration: none;
+      color: $color-white;
+   }
+   
+
    &__heading {
       padding-top: 6rem;
       @include respond(bp4) {
@@ -67,7 +75,16 @@
       }
 
       &--text {padding-left: 8.5rem;}
-      &--span {padding-right: 1rem;}
+      &--span {
+         padding-right: 1.5rem;
+
+         @include respond(bp4) {
+            padding-right: 1rem;
+         }
+         @include respond(bp8) {
+            padding-right: 1.8rem;
+         }
+      }
       @include respond(bp8) {
          & > * {font-size: 1.3rem;}
       }
@@ -90,8 +107,11 @@
       @include respond(bp8) {top: 26rem;}
       @include respond(bp4) {
          bottom: 1rem;
-         left: 1rem;
+         left: 5rem;
          width: 50%;
+      }
+      @include respond(bp9) {
+         left: 1rem;
       }
    }
 }

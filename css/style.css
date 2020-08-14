@@ -11,6 +11,7 @@ breakpoint-6:  49.6875em     - 795px
 breakpoint-7:  47.93em     - 767px
 breakpoint-8:  43.75em     - 700px
 breakpoint-9:  25em     - 400px
+breakpoint-10:  65.62em     - 1050px
 */
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
 *,
@@ -118,10 +119,11 @@ li {
         flex-direction: column;
         text-align: end;
         margin-top: 15vh;
-        margin-right: .2vw; } }
+        margin-right: 1.5vw; } }
     @media (max-width: 33.75em) {
       .navigation__list {
-        margin-top: 22vh; } }
+        margin-top: 20rem;
+        margin-right: -2vw; } }
   @media (max-width: 68.75em) {
     .navigation__item {
       padding: 2rem; } }
@@ -242,6 +244,9 @@ li {
     @media (max-width: 43.75em) {
       .card__text-box {
         padding: 7rem 2rem 3rem 4rem; } }
+    @media (max-width: 33.75em) {
+      .card__text-box {
+        padding: 5.5rem 2rem 2rem 3rem; } }
   .card__text-box-left {
     display: flex;
     flex-direction: column;
@@ -253,7 +258,7 @@ li {
     min-height: 20.5rem; }
     @media (max-width: 33.75em) {
       .card__text-box-left {
-        padding: 7rem 4rem 2rem 3rem; } }
+        padding: 6rem 4rem 2rem 3rem; } }
   .card__image-box {
     display: -webkit-box;
     /* OLD - iOS 6-, Safari 3.1-6, BB7 */
@@ -283,7 +288,7 @@ li {
 .header {
   height: 100vh;
   height: calc(var(--vh, 1vh) * 100);
-  background-image: url("../resources/img/headerfiltered.jpg");
+  background-image: url("../resources/img/headerfiltered.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -292,8 +297,10 @@ li {
   @media (max-width: 33.75em) {
     .header {
       height: 88vh;
-      height: calc(var(--vh, 1vh) * 100);
-      background-position: right; } }
+      height: calc(var(--vh, 1vh) * 100); } }
+  @media (max-height: 30.31em) {
+    .header {
+      background-position-x: right; } }
 
 .header-top {
   display: -webkit-box;
@@ -428,9 +435,21 @@ li {
   transform: translate(-50%, -50%);
   text-align: center;
   margin-top: 1rem;
-  cursor: pointer; }
+  cursor: pointer;
+  display: -webkit-box;
+  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+  display: -ms-flexbox;
+  /* TWEENER - IE 10 */
+  display: -webkit-flex;
+  /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
+  display: flex;
+  align-items: center;
+  justify-content: center; }
   @media (max-width: 68.75em) {
     .learn-more {
+      margin-top: 0rem; } }
+  @media (max-width: 68.75em) {
+    .learn-more__link {
       display: -webkit-box;
       /* OLD - iOS 6-, Safari 3.1-6, BB7 */
       display: -ms-flexbox;
@@ -440,7 +459,7 @@ li {
       display: flex;
       align-items: center;
       justify-content: center;
-      margin-top: 0; } }
+      margin-top: 0rem; } }
   .learn-more__text {
     color: #fff;
     font-weight: 700;
@@ -480,6 +499,9 @@ li {
   color: #fff;
   overflow: hidden;
   height: 100%; }
+  .footer__link, .footer__link:link, .footer__link:visited {
+    text-decoration: none;
+    color: #fff; }
   .footer__heading {
     padding-top: 6rem; }
     @media (max-width: 33.75em) {
@@ -557,7 +579,13 @@ li {
     .footer__contacts--text {
       padding-left: 8.5rem; }
     .footer__contacts--span {
-      padding-right: 1rem; }
+      padding-right: 1.5rem; }
+      @media (max-width: 33.75em) {
+        .footer__contacts--span {
+          padding-right: 1rem; } }
+      @media (max-width: 43.75em) {
+        .footer__contacts--span {
+          padding-right: 1.8rem; } }
     @media (max-width: 43.75em) {
       .footer__contacts > * {
         font-size: 1.3rem; } }
@@ -584,8 +612,11 @@ li {
     @media (max-width: 33.75em) {
       .footer__image-dron {
         bottom: 1rem;
-        left: 1rem;
+        left: 5rem;
         width: 50%; } }
+    @media (max-width: 25.75em) {
+      .footer__image-dron {
+        left: 1rem; } }
 
 .background {
   background-image: url(../img/background.png);
@@ -670,7 +701,8 @@ li {
       .section-image--3 {
         background-position-x: -30rem; } }
   .section-image--4 {
-    background-image: url("../resources/img/lat4.jpg");
+    background-image: url("../resources/img/lat4.png");
+    background-position-x: -.5rem;
     margin-bottom: 15rem; }
 
 .service-card__heading {
