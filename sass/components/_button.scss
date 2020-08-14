@@ -16,6 +16,8 @@
  }
  #button::after {
    content: url(../resources/img/arrup.svg);
+   padding-left: 3px;
+   padding-top: 5px;
  }
 
  #button:hover {
