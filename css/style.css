@@ -20,14 +20,12 @@ breakpoint-10:  65.62em     - 1050px
   margin: 0;
   padding: 0;
   box-sizing: inherit; }
-
 html {
   scroll-behavior: smooth;
   font-size: 62.5%; }
   @media (max-width: 75em) {
     html {
       font-size: 55%; } }
-
 body {
   box-sizing: border-box;
   font-family: 'Roboto', sans-serif;
@@ -302,7 +300,8 @@ li {
   position: fixed;
   bottom: 30px;
   right: 30px;
-  transition: background-color .3s,  opacity .5s, visibility .5s;
+  transition: background-color .3s, 
+ opacity .5s, visibility .5s;
   opacity: 0;
   visibility: hidden;
   z-index: 1000; }

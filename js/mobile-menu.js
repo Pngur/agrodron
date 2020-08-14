@@ -19,17 +19,17 @@ burgerButton.addEventListener('click', function(e) {
 });
 
 linkList.addEventListener('click', function(e) {
-  
+
    for (let i of linkItems) {
       if (i === e.target) {
-         mobileMenu.classList.toggle('toggle-js')};
+         mobileMenu.classList.toggle('toggle-js')
          burgerClass.classList.remove('mobile-menu__cross-icon'); 
          burgerClass.classList.add('mobile-menu__burger-icon'); 
+        };
    }
 });
 
-
-///Smooth Scrolling
+//Плавный скроллинг
 
 // Select all links with hashes
 $('a[href*="#"]')
@@ -67,4 +67,21 @@ $('a[href*="#"]')
       }
     }
   });
+
+
+// Скроллинг вверх   
+const btn = $('#button');
+
+$(window).scroll(function() {
+  if ($(window).scrollTop() > 300) {
+    btn.addClass('show');
+  } else {
+    btn.removeClass('show');
+  }
+});
+
+btn.on('click', function(e) {
+  e.preventDefault();
+  $('html, body').animate({scrollTop:0}, '300');
+});
 

@@ -7,20 +7,11 @@
    background-position: center;
    overflow: hidden;
    position: relative;
-
    @include respond(bp4) {
       height: 88vh;
       height: calc(var(--vh, 1vh) * 100);
    }
-
-   @media (max-height: 30.31em) {
-      background-position-x: right;
-   }
-
-   // @media (min-height: 30.31em) {
-   //    
-   // }
-}
+   @media (max-height: 30.31em) {background-position-x: right;}
 
 .header-top {
    @include flexbox;
@@ -29,24 +20,17 @@
    margin-bottom: 8rem;
    position: relative;
    overflow: hidden;
-
    @include respond(bp2) {
       justify-content: center;
    }
-
    @include respond(bp4) {
       justify-content: flex-start;
    }
-
    &__logo-box {
       @include flexbox;
       @include flexCenter;
       margin-top: 3.6rem;
-
-      @include respond(bp2) {
-         flex-direction: row-reverse;
-      }
-
+      @include respond(bp2) {flex-direction: row-reverse; }
       @include respond(bp9) {
          flex-direction: column;
          margin-top: 3.4rem;
@@ -60,44 +44,26 @@
       @include respond(bp2) {
          margin-right: 0rem;
       }
-      
-      @include respond(bp9) {
-         margin-bottom: 2rem;
-      }
-
+      @include respond(bp9) {margin-bottom: 2rem;}
    }
 
    &__second-logo {
-      @include respond(bp2) {
-         margin-right: 5rem;
-      }
-
-      @include respond(bp8) {
-         margin-right: 0rem;
-      }
+      @include respond(bp2) {margin-right: 5rem;}
+      @include respond(bp8) {margin-right: 0rem;}
    }
-
    &__main-image {
       width: 100%;
       height: auto;
 
-      @include respond(bp3) {
-         width: 80%;
-      }
-      @include respond(bp4) {
-         width: 70%;
-      }
+      @include respond(bp3) {width: 80%;}
+      @include respond(bp4) {width: 70%;}
    }
 
    &__second-image {
       width: 100%;
       height: auto;
-      @include respond(bp3) {
-         width: 80%;
-      }
-      @include respond(bp4) {
-         width: 70%;
-      }
+      @include respond(bp3) {width: 80%;}
+      @include respond(bp4) {width: 70%;}
    }
 }
 
@@ -105,7 +71,6 @@
    @include respond(bp1) {
       margin-top: 17vh;
    }
-
    &__paragraph {
       margin-top: 3.5rem;
       max-width: 583px;
