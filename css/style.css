@@ -308,8 +308,7 @@ li {
   z-index: 1000; }
 
 #button::after {
-  content: url(../resources/img/arrup.svg);
-  transform: rotate(180deg); }
+  content: url(../resources/img/arrup.svg); }
 
 #button:hover {
   cursor: pointer; }
