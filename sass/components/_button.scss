@@ -15,10 +15,10 @@
    z-index: 1000;
  }
  #button::after {
-   content: url(../resources/img/arrow-white.svg);
+   content: url(../resources/img/arrup.svg);
    transform: rotate(180deg);
-   // padding: 0 .3rem 1rem 0;
  }
+
  #button:hover {
    cursor: pointer;
  }
