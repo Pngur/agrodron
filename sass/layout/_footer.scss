@@ -11,11 +11,12 @@
    overflow: hidden;
    height: 100%;
 
-   @include respond(bp2) {
-   }
-
    &__heading {
       padding-top: 6rem;
+      @include respond(bp4) {
+         margin-left: 1rem;
+         width: 150px;
+      }
    }
 
    &__box {
@@ -30,6 +31,13 @@
       @include flexbox;
       flex-direction: column;
       margin-bottom: 2rem;
+      line-height: 1.5;
+      @include respond(bp8) {
+         & > * {font-size: 1.3rem;}
+      }
+      @include respond(bp8) {
+         width: 190px;
+      }
    }
 
    &__contacts-box {
@@ -37,12 +45,12 @@
       flex-direction: column;
       letter-spacing: .1rem;
       align-items: flex-start;
+      
+      & > *:last-child {padding-top: 2rem;}
+      & > *:first-child {padding-bottom: .5rem;}
 
-      & > *:last-child {
-         padding-top: 2rem;
-      }
-      & > *:first-child {
-         padding-bottom: .5rem;
+      @include respond(bp4) {
+         & > * {font-size: 1.3rem;}
       }
    }
 
@@ -51,27 +59,40 @@
       align-items: center;
       justify-content: center;
 
+      & > * {font-size: 1.5rem;}
+
       &--icon {
          @include flexbox;
          padding-right: 2rem;
       }
 
-      &--text {
-         padding-left: 8.5rem;
+      &--text {padding-left: 8.5rem;}
+      &--span {padding-right: 1rem;}
+      @include respond(bp8) {
+         & > * {font-size: 1.3rem;}
       }
-
-      &--span {
-         padding-right: 1rem;
-      }
-
    }
 
    &__image-dron {
       position: absolute;
-      top: 12.5rem;
+      top: 15rem;
       left: 10rem;
       width: 35%;
       height: auto;
+
+      @include respond(bp2) {top: 15rem;}
+      @include respond(bp3) {top: 22rem;}
+      @include respond(bp6) {
+         top: 22rem;
+         left: 5rem;
+         width: 40%;
+      }
+      @include respond(bp8) {top: 26rem;}
+      @include respond(bp4) {
+         bottom: 1rem;
+         left: 1rem;
+         width: 50%;
+      }
    }
 }
 

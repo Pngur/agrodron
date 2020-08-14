@@ -5,7 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <link rel="stylesheet" href="css/style.css">
-    <title>Agro Dron</title>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/resources/icons/apple-touch-icon.png">
+    <link rel="android-chrome-192x192" sizes="192x192" href="/resources/icons/android-chrome-192x192.png">
+    <link rel="android-chrome-512x512" sizes="512x512" href="/resources/icons/android-chrome-512x512.png">
+    <link rel="android-chrome-512x512" sizes="512x512" href="/resources/icons/android-chrome-512x512.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/resources/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/resources/icons/favicon-16x16.png">
+    <link rel="manifest" href="/resources/icons/site.webmanifest">
+    <title>Dron Assist</title>
 </head>
 <body>
     <header class="header">
@@ -13,23 +21,23 @@
             <div class="header-top">
                 <div class="header-top__logo-box">
                     <div class="header-top__main-logo">
-                        <img class="header-top__main-image" src="img/main-logo.png" alt="Dron Agro Assistance">
+                        <img class="header-top__main-image" src="resources/img/main-logo.png" alt="Dron Agro Assistance">
                     </div>
                     <div class="header-top__second-logo">
-                        <img class="header-top__second-image" src="img/tta-logo.png" alt="TTA Viation">
+                        <img class="header-top__second-image" src="resources/img/tta-logo.png" alt="TTA Viation">
                     </div>
                 </div>
                 <nav class="navigation ">
                     <ul class="navigation__list">
-                        <li class="navigation__item"><a href="#" class="navigation__link">Услуги</a></li>
-                        <li class="navigation__item"><a href="#" class="navigation__link">Экономичность</a></li>
-                        <li class="navigation__item"><a href="#" class="navigation__link">Опрыскивание</a></li>
-                        <li class="navigation__item"><a href="#" class="navigation__link">Решение</a></li>
-                        <li class="navigation__item"><a href="#" class="navigation__link">Преимущества</a></li>
-                        <li class="navigation__item"><a href="#" class="navigation__link">Связаться</a></li>
+                        <li class="navigation__item"><a href="#services" class="navigation__link">Услуги</a></li>
+                        <li class="navigation__item"><a href="#economy" class="navigation__link">Экономичность</a></li>
+                        <li class="navigation__item"><a href="#spraying" class="navigation__link">Опрыскивание</a></li>
+                        <li class="navigation__item"><a href="#decision" class="navigation__link">Решение</a></li>
+                        <li class="navigation__item"><a href="#benefits" class="navigation__link">Преимущества</a></li>
+                        <li class="navigation__item"><a href="#contact" class="navigation__link">Связаться</a></li>
                     </ul>
                 </nav>
-                <div class="mobile-menu   ">
+                <div class="mobile-menu">
                     <span class="mobile-menu__burger-icon">&nbsp;</span>
                 </div>
             </div>
@@ -45,22 +53,23 @@
             </div>
         </div>
         <div class="header-bottom">
-            <!-- <img src="img/Rectangle.png" alt="" class="header-bottom__image"> -->
             <div class="learn-more">
-                <p class="learn-more__text paragraph">УЗНАТЬ БОЛЬШЕ</p>
-                <img src="img/arrow-white.svg" alt="arrow" class="learn-more__icon">
+                <a class="learn-more__link" href="#services">
+                    <p class="learn-more__text paragraph">УЗНАТЬ БОЛЬШЕ</p>
+                    <img src="resources/img/arrow-white.svg" alt="arrow" class="learn-more__icon">
+                </a>
             </div>
         </div>
     </header>
     <div class="background">
         <main>
-            <section class="section">
+            <section class="section" id="services">
                 <div class="container">
                     <h2 class="heading-secondary">Наши услуги</h2>
                     <div class="section-box">
                         <div class="service-card card">
                             <div class=" card__image-box">
-                                <img src="img/card-image-1.png" alt="" class="card__image">
+                                <img src="resources/img/pic1.jpg" alt="" class="card__image">
                             </div>
                             <div class="card__card-box">
                                 <div class="card__text-box">
@@ -72,7 +81,7 @@
                         </div>
                         <div class="service-card card">
                             <div class="card__image-box">
-                                <img src="img/card-image-2.png" alt="" class="card__image">
+                                <img src="resources/img/pic2.jpg" alt="" class="card__image">
                             </div>
                             <div class="card__card-box">
                                 <div class="card__text-box">
@@ -84,7 +93,7 @@
                         </div>
                         <div class="service-card card">
                             <div class="card__image-box">
-                                <img src="img/card-image-3.png" alt="" class="card__image">
+                                <img src="resources/img/pic3.jpg" alt="" class="card__image">
                             </div>
                             <div class="card__card-box">
                                 <div class="card__text-box">
@@ -104,13 +113,13 @@
                     </div>
                 </div>
             </section>
-            <section class="section">
+            <section class="section" id="economy">
                 <div class="container">
                     <h2 class="heading-secondary">ЭКОНОМИЧЕСКАЯ ЭФФЕКТИВНОСТЬ</h2>
                     <div class="section-box">
                         <div class="service-card card">
                             <div class="card__image-box">
-                                <img src="img/card-image-4.png" alt="" class="card__image">
+                                <img src="resources/img/pic4.jpg" alt="" class="card__image">
                             </div>
                             <div class="card__card-box">
                                 <div class="card__text-box">
@@ -133,23 +142,25 @@
                                 </div>
                             </div>    
                             <div class="card__image-box">
-                                <img src="img/card-image-5.png" alt="" class="card__image">
+                                <img src="resources/img/pic5.jpg" alt="" class="card__image">
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
-            <section class="section-image section-image--1">
-                <div class="text-block text-block--1">
-                    <h3 class="text-block__heading text-block__heading--1 heading-third">УЛЬТРАМАЛООБЪЕМНОЕ<br/> ОПРЫСКИВАНИЕ</h3>
-                    <ul class="text-block__list text-block__list--1">
-                        <li class="paragraph">регулируемый размер капли 80-200 мкм</li>
-                        <li class="paragraph">капли не скатываются на землю</li>
-                        <li class="paragraph">расходует 7-10 литров рабочего раствора на гектар</li>
-                        <li class="paragraph">экономит 90% воды и 30% -40% пестицидов</li>
-                        <li class="paragraph">регулируемая скорость, ширина опрыскивания от 2 до 4 метров</li>
-                        <li class="paragraph">система опрыскивания сделана в Германии</li>
-                    </ul>
+            <section class="section-image section-image--1" id="spraying">
+                <div class="text-block ">
+                    <div class="text-block__box text-block__box--1">
+                        <h3 class="text-block__heading text-block__heading--1 heading-third">УЛЬТРАМАЛООБЪЕМНОЕ<br/> ОПРЫСКИВАНИЕ</h3>
+                        <ul class="text-block__list text-block__list--1">
+                            <li class="text-block__item paragraph">регулируемый размер капли 80-200 мкм</li>
+                            <li class="text-block__item paragraph">капли не скатываются на землю</li>
+                            <li class="text-block__item paragraph">расходует 7-10 литров рабочего раствора на гектар</li>
+                            <li class="text-block__item paragraph">экономит 90% воды и 30% -40% пестицидов</li>
+                            <li class="text-block__item paragraph">регулируемая скорость, ширина опрыскивания от 2 до 4 метров</li>
+                            <li class="text-block__item paragraph">система опрыскивания сделана в Германии</li>
+                        </ul>
+                    </div>
                 </div>
             </section>
             <section class="section">
@@ -157,7 +168,7 @@
                     <div class="section-box">
                         <div class="service-card card">
                             <div class="card__image-box">
-                                <img src="img/card-image-6.png" alt="" class="card__image">
+                                <img src="resources/img/pic6.jpg" alt="" class="card__image">
                             </div>
                             <div class="card__card-box ">
                                 <div class="card__text-box ">
@@ -170,29 +181,29 @@
                             </div>    
                         </div>
                         <div class="section-services__block">
-                            <img src="img/card-image-7.png" alt="" class="section-services__image">
+                            <img src="resources/img/card-image-7.png" alt="" class="section-services__image">
                             <p class="section__paragraph paragraph">Чтобы обеспечить равномерное дробное нанесение и предотвратить скатывания состава с листа <span class="paragraph--bold">мы уменьшили каплю в 10 раз.</span>  Такая методика позволяет <span class="paragraph--bold">минимизировать расход химикатов    </span> и предотвратить их улетучивание, капля буквально вбивается в растение. Кроме того, применение беспилотников <span class="paragraph--bold">не требует использования тяжелой техники</span> и позволяет проводить точечные обработки даже в малодоступных участках поля.</p>
                         </div>
                     </div>
                 </div>    
             </section>
-            <section class="section-image section-image--2">
+            <section class="section-image section-image--2" id="decision">
                 <div class="text-block text-block--2">
                     <h3 class="text-block__heading text-block__heading--2 heading-third">НАШИ РЕШЕНИЯ</h3>
                     <ul class="text-block__list text-block__list--2">
-                        <li class="paragraph">комплексные услуги по обработке гербицидами сплошного действия до посева</li>
-                        <li class="paragraph">опрыскивание посевов в период вегетации против сорняков, болезней и вредителей</li>
-                        <li class="paragraph">проведение некорневых подкормок</li>
-                        <li class="paragraph">десикации</li>
+                        <li class="text-block__item paragraph">комплексные услуги по обработке гербицидами сплошного действия до посева</li>
+                        <li class="text-block__item paragraph">опрыскивание посевов в период вегетации против сорняков, болезней и вредителей</li>
+                        <li class="text-block__item paragraph">проведение некорневых подкормок</li>
+                        <li class="text-block__item paragraph">десикации</li>
                     </ul>
                 </div>
             </section>
-            <section class="section">
+            <section class="section" >
                 <h2 class="heading-secondary">ЭФФЕКТИВНО ДЛЯ СЛЕДУЮЩИХ ГРУПП</h2>
                 <div class="container">
                     <div class="service-card card">
                         <div class="card__image-box">
-                            <img src="img/card-image-8.png" alt="" class="card__image">
+                            <img src="resources/img/pic7.jpg" alt="" class="card__image">
                         </div>
                         <div class="card__card-box ">
                             <div class="card__text-box ">
@@ -235,13 +246,13 @@
                     </div>
                 </div>
             </section>
-            <section class="section">
+            <section class="section" id="benefits">
                 <h2 class="heading-secondary">ПРЕИМУЩЕСТВА</h2>
                 <div class="container">
                     <div class="section-box">
                         <div class="service-card card">
                             <div class=" card__image-box">
-                                <img src="img/card-image-9.png" alt="" class="card__image">
+                                <img src="resources/img/pic8.jpg" alt="" class="card__image">
                             </div>
                             <div class="card__card-box">
                                 <div class="card__text-box">
@@ -262,12 +273,12 @@
                                 </div>
                             </div>    
                             <div class="card__image-box">
-                                <img src="img/card-image-10.png" alt="" class="card__image">
+                                <img src="resources/img/pic9.jpg" alt="" class="card__image">
                             </div>
                         </div>
                         <div class="service-card card">
                             <div class=" card__image-box">
-                                <img src="img/card-image-11.png" alt="" class="card__image">
+                                <img src="resources/img/pic10.jpg" alt="" class="card__image">
                             </div>
                             <div class="card__card-box">
                                 <div class="card__text-box">
@@ -286,12 +297,12 @@
                                 </div>
                             </div>    
                             <div class="card__image-box">
-                                <img src="img/card-image-12.png" alt="" class="card__image">
+                                <img src="resources/img/pic11.jpg" alt="" class="card__image">
                             </div>
                         </div>
                         <div class="service-card card">
                             <div class=" card__image-box">
-                                <img src="img/card-image-13.png" alt="" class="card__image">
+                                <img src="resources/img/pic12.jpg" alt="" class="card__image">
                             </div>
                             <div class="card__card-box">
                                 <div class="card__text-box">
@@ -305,9 +316,11 @@
                 </div>
             </section>
             <section class="section-image section-image--3">
-                <div class="text-block text-block--3">
-                    <h3 class="text-block__heading text-block__heading--3 heading-third">ДРОН ПОЛНОСТЬЮ<br/> ВОДОНЕПРОНИЦАЕМ</h3>
-                    <p class="text-block__paragraph paragraph paragraph--white">позволяет работать в агрессивных условиях и мыть водой после опрыскивания</p>
+                <div class="text-block text-block">
+                    <div class="text-block__box text-block__box--2">
+                        <h3 class="text-block__heading text-block__heading--3 heading-third">ДРОН ПОЛНОСТЬЮ<br/> ВОДОНЕПРОНИЦАЕМ</h3>
+                        <p class="text-block__paragraph paragraph paragraph--white">позволяет работать в агрессивных условиях и мыть водой после опрыскивания</p>
+                    </div>
                 </div>
             </section>
             <section class="section">
@@ -324,12 +337,12 @@
                                 </div>
                             </div>    
                             <div class="card__image-box">
-                                <img src="img/13picfinal.png" alt="" class="card__image">
+                                <img src="resources/img/pic13.jpg" alt="" class="card__image">
                             </div>
                         </div>
                         <div class="service-card card">
                             <div class=" card__image-box">
-                                <img src="img/card-image-14.png" alt="" class="card__image">
+                                <img src="resources/img/pic14.jpg" alt="" class="card__image">
                             </div>
                             <div class="card__card-box">
                                 <div class="card__text-box">
@@ -351,12 +364,12 @@
 
                             </div>    
                             <div class="card__image-box">
-                                <img src="img/card-image-15.png" alt="" class="card__image">
+                                <img src="resources/img/pic15.jpg" alt="" class="card__image">
                             </div>
                         </div>
                         <div class="service-card card">
                             <div class=" card__image-box">
-                                <img src="img/card-image-16.png" alt="" class="card__image">
+                                <img src="resources/img/pic16.jpg" alt="" class="card__image">
                             </div>
                             <div class="card__card-box">
 
@@ -372,34 +385,35 @@
                 </div>
             </section>
         </main>
-        <footer class="footer-section section-image section-image--4">
+        <footer class="footer-section section-image section-image--4" id="contact">
             <div class="footer">
                 <h3 class="footer__heading heading-third">СВЯЗАТЬСЯ С НАМИ:</h3>
                 <div class="footer__box">
                     <div class="footer__credits">
-                        <span class="paragraph paragraph--white">DRON ASSISSTANCE S.R.L.</span>
+                        <span class=" paragraph paragraph--white">DRON ASSISSTANCE S.R.L.</span>
                         <span class="paragraph paragraph--white">Republica Moldova, mun. Chișinău,</span>
                         <span class="paragraph paragraph--white">MD-2004, bd. Ștefan cel Mare și Sfânt, 133</span>
                     </div>
                     <div class="footer__contacts-box">
                         <div class="footer__contacts">
-                            <span class="footer__contacts--icon"><img src="img/phone-icon.png" alt=""></span>
+                            <span class="footer__contacts--icon"><img src="resources/img/phone-icon.png" alt=""></span>
                             <span class=" paragraph"><span class="footer__contacts--span">Tel.</span>   +37369104386</span>
                         </div>   
                         <div class="footer__contacts">
                             <span class="footer__contacts--text paragraph">+37361140354</span>
                         </div>   
                         <div class="footer__contacts">
-                            <span class="footer__contacts--icon "><img src="img/email-icon.png" alt=""></span>
+                            <span class="footer__contacts--icon "><img src="resources/img/email-icon.png" alt=""></span>
                             <span class=" paragraph">dronassist@gmail.com</span>
                         </div>   
                     </div>
                 </div>
             </div>
-            <img src="img/drone-image.png" alt="" class="footer__image-dron">
+            <img src="resources/img/drone-image.png" alt="" class="footer__image-dron">
         </footer>
     </div>
     <script src="js/mobile.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="js/mobile-menu.js"></script>
 </body>
 </html>

@@ -1,40 +1,44 @@
 /* 
 MEDIA QUERY MANAGER 
-
-
-
 breakpoint-1:  81.25em     - 1300px
 breakpoint-1:  75em     - 1200px
 breakpoint-2:  68,75em  - 1100px‬
-                62.5em  - 1000px
-breakpoint-3:  48em     - 768px
+breakpoint-3:   62.5em  - 1000px
 breakpoint-4:  33,75em     - 500px
 breakpoint-5:  56.3125em    - 900px
 breakpoint-6:  49.6875em     - 795px
-
+breakpoint-7:  47.93em     - 767px
+breakpoint-8:  43.75em     - 700px
+breakpoint-9:  25em     - 400px
 */
 
 @mixin respond($breakpoint) {
     @if $breakpoint == bp1 {
         @media (max-width: 75em ) { @content; }
     }
-
     @if $breakpoint == bp2 {
         @media (max-width: 68.75em) { @content; }
     }
-
     @if $breakpoint == bp3 {
         @media (max-width: 62.5em) { @content; }
     }
-
     @if $breakpoint == bp4 {
         @media (max-width: 33.75em  ) { @content; }
     }
     @if $breakpoint == bp5 {
-        @media (max-width: 56.3125em) { @content; }
+        @media (max-width: 56.31em) { @content; }
     }
     @if $breakpoint == bp6 {
-        @media (max-width: 49.6875em) { @content; }
+        @media (max-width: 49.68em) { @content; }
+    }
+    @if $breakpoint == bp7 {
+        @media (max-width: 47.93em) { @content; }
+    }
+    @if $breakpoint == bp8 {
+        @media (max-width: 43.75em) { @content; }
+    }
+    @if $breakpoint == bp9 {
+        @media (max-width: 25.75em) { @content; }
     }
 }
 
