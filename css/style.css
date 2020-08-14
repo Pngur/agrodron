@@ -98,16 +98,13 @@ li {
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
-      background: #222;
+      background-color: #000;
+      opacity: 1;
       height: 100vh;
       width: 100vw;
-      z-index: 1000; }
+      z-index: 2000; }
       .navigation.toggle-js {
         display: block; } }
-  @media (max-width: 33.75em) {
-    .navigation {
-      background: #fff;
-      box-shadow: inset -400px 213px 215px -62px #071104; } }
   .navigation__list {
     display: -webkit-box;
     /* OLD - iOS 6-, Safari 3.1-6, BB7 */
@@ -162,7 +159,7 @@ li {
   position: absolute;
   top: 4rem;
   right: 1.5rem;
-  z-index: 1000; }
+  z-index: 2000; }
   @media (max-width: 33.75em) {
     .mobile-menu {
       right: -1rem; } }
@@ -288,6 +285,39 @@ li {
     .card__image {
       width: 100%;
       height: auto; } }
+
+#button {
+  display: -webkit-box;
+  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+  display: -ms-flexbox;
+  /* TWEENER - IE 10 */
+  display: -webkit-flex;
+  /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #5c9230;
+  width: 40px;
+  height: 40px;
+  border-radius: 4px;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  transition: background-color .3s,  opacity .5s, visibility .5s;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 1000; }
+
+#button::after {
+  content: url(../../resources/img/arrow-white.svg);
+  transform: rotate(180deg); }
+
+#button:hover {
+  cursor: pointer; }
+
+#button.show {
+  opacity: 1;
+  visibility: visible; }
 
 .header {
   height: 100vh;

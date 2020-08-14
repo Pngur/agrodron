@@ -1,0 +1,30 @@
+#button {
+   @include flexbox;
+   @include flexCenter;
+   background-color: #5c9230;
+   width: 40px;
+   height: 40px;
+   // text-align: center;
+   border-radius: 4px;
+   position: fixed;
+   bottom: 30px;
+   right: 30px;
+   transition: background-color .3s, 
+   opacity .5s, visibility .5s;
+   opacity: 0;
+   visibility: hidden;
+   z-index: 1000;
+ }
+ #button::after {
+   content: url(../../resources/img/arrow-white.svg);
+   transform: rotate(180deg);
+   // padding: 0 .3rem 1rem 0;
+ }
+ #button:hover {
+   cursor: pointer;
+ }
+
+ #button.show {
+   opacity: 1;
+   visibility: visible;
+ }
