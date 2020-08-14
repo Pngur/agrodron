@@ -81,8 +81,6 @@ li {
   font-size: 1.8rem; }
   .paragraph--bold {
     font-weight: 700; }
-  .paragraph--right {
-    margin-right: 1rem; }
   .paragraph--italic {
     font-style: italic;
     font-weight: 700; }
@@ -253,6 +251,9 @@ li {
     padding: 2rem 4rem 2rem 3rem;
     opacity: .9;
     min-height: 20.5rem; }
+    @media (max-width: 33.75em) {
+      .card__text-box-left {
+        padding: 7rem 4rem 2rem 3rem; } }
   .card__image-box {
     display: -webkit-box;
     /* OLD - iOS 6-, Safari 3.1-6, BB7 */
@@ -291,7 +292,8 @@ li {
   @media (max-width: 33.75em) {
     .header {
       height: 88vh;
-      height: calc(var(--vh, 1vh) * 100); } }
+      height: calc(var(--vh, 1vh) * 100);
+      background-position: right; } }
 
 .header-top {
   display: -webkit-box;

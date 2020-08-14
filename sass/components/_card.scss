@@ -8,10 +8,9 @@
          @include flexCenter;
          position: relative;
          max-width: 80rem;
-         z-index: 100;
-         // padding: 3rem 2rem 3rem 8rem;
-         
+         z-index: 100;         
          left: -5rem;
+
          @include respond(bp8) {
             left:0rem;
             top: -5rem;
@@ -51,6 +50,7 @@
          padding: 2rem 4rem 2rem 3rem;
          opacity: .9;
          min-height: 20.5rem;
+         @include respond(bp4) {padding: 7rem 4rem 2rem 3rem;};
       }
 
       &__image-box {

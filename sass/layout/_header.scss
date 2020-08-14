@@ -11,6 +11,7 @@
    @include respond(bp4) {
       height: 88vh;
       height: calc(var(--vh, 1vh) * 100);
+      background-position: right;
    }
 }
 
