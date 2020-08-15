@@ -8,10 +8,9 @@
    overflow: hidden;
    position: relative;
    @include respond(bp4) {
-      height: 88vh;
-      height: calc(var(--vh, 1vh) * 100);
+      height: 65rem;
    }
-   @media (max-height: 30.31em) {background-position-x: right;}
+   @media (max-height: 30.31em) {height: 65rem;}
 
 .header-top {
    @include flexbox;
@@ -68,9 +67,8 @@
 }
 
 .header-text {
-   @include respond(bp1) {
-      margin-top: 17vh;
-   }
+   @include respond(bp1) {margin-top: 17vh;}
+   @include respond(bp4) {margin-top: 13vh;}
    &__paragraph {
       margin-top: 3.5rem;
       max-width: 583px;

@@ -1,5 +1,6 @@
 .navigation {
    margin-top: 2rem;
+
    @include respond(bp2) {
       display: none;
       margin: 0;
@@ -11,10 +12,12 @@
       height: 100vh;
       width: 100vw;
       z-index: 2000;
+      &.toggle-js {display: block; }
+   }
 
-      &.toggle-js {
-         display: block;
-      }
+   @media (max-height: 30.31em) {
+      // height:80rem;
+      // margin-top: 25rem;
    }
 
    &__list {
@@ -33,6 +36,8 @@
          margin-top: 20rem;
          margin-right: -2vw;
       }
+
+
    }
    
    &__item {
