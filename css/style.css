@@ -104,6 +104,10 @@ li {
       z-index: 2000; }
       .navigation.toggle-js {
         display: block; } }
+  @media (max-height: 30.31em) {
+    .navigation {
+      height: 100%;
+      width: 100%; } }
   .navigation__list {
     display: -webkit-box;
     /* OLD - iOS 6-, Safari 3.1-6, BB7 */
@@ -859,4 +863,4 @@ li {
         margin-right: 10.5rem; } }
     @media (max-width: 33.75em) {
       .text-block__paragraph {
-        margin-right: -3rem; } }
+        margin-right: -2.7rem; } }
