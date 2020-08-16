@@ -793,9 +793,6 @@ li {
       @media (max-width: 43.75em) {
         .text-block__box--2 {
           margin: 5rem 5rem 0rem 0rem; } }
-      @media (max-width: 33.75em) {
-        .text-block__box--2 {
-          margin: 5rem 5rem 0rem 0rem; } }
   .text-block--2 {
     padding: 7rem 0 0rem 15rem; }
     .text-block--2 > *:first-child {
@@ -839,7 +836,7 @@ li {
     .text-block__item {
       font-size: 1.5rem; } }
   .text-block__paragraph {
-    max-width: 381px; }
+    width: 381px; }
     @media (max-width: 75em) {
       .text-block__paragraph {
         margin-right: 9rem; } }
@@ -849,18 +846,17 @@ li {
         font-size: 2.5rem; } }
     @media (max-width: 43.75em) {
       .text-block__paragraph {
-        max-width: 290px;
+        width: 290px;
         margin-right: 0; } }
     @media (max-width: 33.75em) {
       .text-block__paragraph {
-        max-width: 200px;
+        width: 200px;
         font-size: 1.5rem; } }
     @media (max-width: 43.75em) {
       .text-block__paragraph {
-        max-width: 250px;
         font-size: 1.5rem;
         line-height: 1.5;
         margin-right: 10.5rem; } }
     @media (max-width: 33.75em) {
       .text-block__paragraph {
-        margin-right: -2.7rem; } }
+        margin-right: 3rem; } }

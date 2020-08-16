@@ -165,7 +165,6 @@
          margin: 5rem 23rem 0rem 0rem;
          @include respond(bp3) { margin: 5rem 0rem 0rem 0rem;}
          @include respond(bp8) { margin: 5rem 5rem 0rem 0rem;}
-         @include respond(bp4) { margin: 5rem 5rem 0rem 0rem;}
       }
    }
 
@@ -208,7 +207,7 @@
    }
 
    &__paragraph {
-      max-width: 381px;
+      width: 381px;
 
       @include respond(bp1) {
          margin-right: 9rem;
@@ -219,20 +218,19 @@
          font-size: 2.5rem;    
       }
       @include respond(bp8) {
-         max-width: 290px;
+         width: 290px;
          margin-right: 0;
       }
       @include respond(bp4) {
-         max-width: 200px;
+         width: 200px;
          font-size: 1.5rem;
       }
       
       @include respond(bp8) {
-         max-width: 250px;
          font-size: 1.5rem;
          line-height: 1.5;
          margin-right: 10.5rem;
       }
-      @include respond(bp4) {margin-right: -2.7rem;}
+      @include respond(bp4) {margin-right: 3rem;}
    }
 }
