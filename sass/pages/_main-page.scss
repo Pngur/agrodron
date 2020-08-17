@@ -8,16 +8,10 @@
       background-color: #fff;
       border-radius: 25px;
       padding: 2rem 0;
-
    }
 
-   &__paragraph {
-      max-width: 73rem;     
-   }
-
-   & > *:not(:last-child) {
-      margin-bottom: 3rem;
-   }
+   &__paragraph {max-width: 73rem;     }
+   & > *:not(:last-child) {margin-bottom: 3rem;}
 }
 
 .service-card {
@@ -30,7 +24,6 @@
 }
 
 .service-card-left {
-
    @include respond(bp8) {
       flex-direction: column-reverse;
       justify-content: center;
@@ -39,13 +32,9 @@
 }
 
 .section-box {
-
    & > *:not(:last-child) {
       margin-bottom: 4rem;
-
-      @include respond(bp8) {
-         margin-bottom: 0rem;
-      }
+      @include respond(bp8) {margin-bottom: 0rem;}
    }
 }
 
@@ -55,44 +44,25 @@
    height: 32.7rem;
    margin: 7rem 0 7rem 0;
 
-   @include respond(bp8) {
-      margin: 3rem 0 7rem 0;
-   }
-
-   @include respond(bp3) {
-      width: 100%;
-   }
+   @include respond(bp8) {margin: 3rem 0 7rem 0;}
+   @include respond(bp3) {width: 100%;}
 
    &--1 {
       background-image: url('../resources/img/lat1.jpg');
-      @include respond(bp2) {
-         background-position-x: -20rem;
-      }
-      
-      @include respond(bp5) {
-         background-position-x: -31rem;
-      }
-      @include respond(bp6) {
-         background-position-x: -41rem;
-      }
+      @include respond(bp2) {background-position-x: -20rem;}
+      @include respond(bp5) {background-position-x: -31rem;}
+      @include respond(bp6) {background-position-x: -41rem;}
    }
 
    &--2 {
       background-image: url('../resources/img/lat2.jpg');
-      @include respond(bp8) {
-         margin: 7rem 0 5rem 0;
-      }
+      @include respond(bp8) {margin: 7rem 0 5rem 0;}
    }
 
    &--3 {
       background-image: url('../resources/img/lat3.jpg');
-
-      @include respond(bp3) {
-         background-position-x: -20rem;
-      }
-      @include respond(bp8) {
-         background-position-x: -30rem;
-      }
+      @include respond(bp3) {background-position-x: -20rem;}
+      @include respond(bp8) {background-position-x: -30rem;}
    }
 
    &--4 {
@@ -103,9 +73,7 @@
 }
 
 .service-card {
-   &__heading {
-      margin: 0 0 2rem 4rem;
-   }
+   &__heading {margin: 0 0 2rem 4rem;}
    
    &__list {
       padding-left: 1rem;
@@ -150,6 +118,22 @@
 .text-block {
    overflow: hidden;
 
+   &--2 {
+      padding: 7rem 0 0rem 15rem;
+      & > *:first-child {padding-bottom: 3rem;}
+      @include respond(bp5) {padding: 7rem 0rem 0rem 7rem;}
+      @include respond(bp4) {padding: 5rem 0 0rem 2rem; }
+   }
+
+   &--3 {
+      @include flexbox;
+      flex-direction: column;
+      align-items: flex-end;
+      padding: 9rem 32rem 0rem 0rem;
+      @include respond(bp2) {padding: 9rem 15rem 0rem 0rem;}
+      @include respond(bp4) {padding: 9rem 5rem 0rem 0rem;}
+   }
+
    &__box {
       display: flex;
       flex-direction: column;
@@ -160,21 +144,8 @@
          margin: 3rem 5rem 0rem 0rem;
          @include respond(bp4) {margin: 4rem 0rem 0rem 0rem;}
       }
-      
-      &--2 {
-         margin: 5rem 23rem 0rem 0rem;
-         @include respond(bp3) { margin: 5rem 0rem 0rem 0rem;}
-         @include respond(bp8) { margin: 5rem 5rem 0rem 0rem;}
-      }
    }
 
-   &--2 {
-      padding: 7rem 0 0rem 15rem;
-      & > *:first-child {padding-bottom: 3rem;}
-      @include respond(bp5) {padding: 7rem 0rem 0rem 7rem;}
-      @include respond(bp4) {padding: 5rem 0 0rem 2rem; }
-   }
-   
    &__heading {
       &--1 {
          padding: 0rem 13rem 2rem 0rem;
@@ -182,11 +153,7 @@
       }
 
       &--3 {
-         padding: 0rem 1rem 2rem 0rem;
-         @include respond(bp1) {padding-right: 15rem;}
-         @include respond(bp8) {padding-right: 2rem;}
-         @include respond(bp8) {padding: 0rem 8rem 2rem 0rem;}
-         @include respond(bp4) {padding: 0rem 5rem 2rem 0rem;}
+         padding:0rem 2rem 1.7rem 0rem;
       }
    }
 
@@ -201,36 +168,15 @@
    } 
    
    &__item {
-      @include respond(bp8) {
-         font-size: 1.5rem;
-      }
+      @include respond(bp8) {font-size: 1.5rem;}
    }
 
    &__paragraph {
-      width: 381px;
-
-      @include respond(bp1) {
-         margin-right: 9rem;
-     }
-
-      @include respond(bp4) {
-         margin-right: 4.5rem; 
-         font-size: 2.5rem;    
-      }
+      width: 39rem;
       @include respond(bp8) {
-         width: 290px;
-         margin-right: 0;
-      }
-      @include respond(bp4) {
-         width: 200px;
+         width: 33rem;
          font-size: 1.5rem;
       }
-      
-      @include respond(bp8) {
-         font-size: 1.5rem;
-         line-height: 1.5;
-         margin-right: 10.5rem;
-      }
-      @include respond(bp4) {margin-right: 3rem;}
+      @include respond(bp4) {width: 22.7rem;}
    }
 }
