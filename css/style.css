@@ -89,6 +89,15 @@ li {
     color: #fff; }
 
 .navigation {
+  display: -webkit-box;
+  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+  display: -ms-flexbox;
+  /* TWEENER - IE 10 */
+  display: -webkit-flex;
+  /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
+  display: flex;
+  align-items: center;
+  justify-content: center;
   margin-top: 2rem; }
   @media (max-width: 68.75em) {
     .navigation {
@@ -103,7 +112,10 @@ li {
       width: 100vw;
       z-index: 2000; }
       .navigation.toggle-js {
-        display: block; } }
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: unset; } }
   @media (max-height: 30.31em) {
     .navigation {
       height: 100%;
@@ -122,24 +134,21 @@ li {
       .navigation__list {
         flex-direction: column;
         text-align: end;
-        margin-top: 15vh;
-        margin-right: 1.5vw; } }
+        margin-top: 1.3rem;
+        margin-right: 2rem; } }
     @media (max-width: 33.75em) {
       .navigation__list {
-        margin-top: 20rem;
-        margin-right: -2vw; } }
+        margin-right: -1rem; } }
   @media (max-width: 68.75em) {
     .navigation__item {
       padding: 2rem; } }
-  .navigation__link:hover {
-    padding: 1rem;
-    border-radius: 5px;
-    background-color: #5c9230; }
-    @media (max-width: 68.75em) {
-      .navigation__link:hover {
-        background-color: #222; } }
-  .navigation__link,
-  .navigation__link:link .navigation__link:visited {
+  .navigation__link--special {
+    color: #88CA82 !important;
+    font-weight: 700;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25); }
+    .navigation__link--special:hover {
+      color: #fff !important; }
+  .navigation__link:link, .navigation__link:visited {
     padding: 1rem;
     font-size: 1.2rem;
     color: #fff;
@@ -147,10 +156,52 @@ li {
     letter-spacing: .1rem;
     transition: background-color .3s; }
     @media (max-width: 68.75em) {
-      .navigation__link,
-      .navigation__link:link .navigation__link:visited {
+      .navigation__link:link, .navigation__link:visited {
         font-size: 2.4rem;
         transition: none; } }
+  .navigation__link:hover {
+    padding: 1rem;
+    border-radius: 5px;
+    background-color: #5c9230; }
+    @media (max-width: 68.75em) {
+      .navigation__link:hover {
+        background-color: #222; } }
+
+.language {
+  color: #9EB2B8;
+  font-size: 1.2rem;
+  margin-right: 2.8rem;
+  display: -webkit-box;
+  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+  display: -ms-flexbox;
+  /* TWEENER - IE 10 */
+  display: -webkit-flex;
+  /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
+  display: flex; }
+  .language > *:not(:last-child) {
+    padding-right: .5rem; }
+  @media (max-width: 68.75em) {
+    .language {
+      margin-top: 25vh;
+      margin-right: 5rem;
+      font-size: 2.4rem;
+      font-weight: 700; } }
+  @media (max-width: 33.75em) {
+    .language {
+      margin-right: 2rem; } }
+  .language__link {
+    font-size: 1.2rem;
+    color: #9EB2B8;
+    text-decoration: none; }
+    @media (max-width: 68.75em) {
+      .language__link {
+        font-size: 2.4rem;
+        font-weight: 700; } }
+    .language__link:link__link, .language__link:visited__link {
+      font-size: 1.2rem;
+      color: #9EB2B8; }
+    .language__link:link:hover, .language__link:visited:hover {
+      color: #88CA82; }
 
 .mobile-menu {
   display: none;
@@ -198,9 +249,6 @@ li {
       left: 0; }
     .mobile-menu__cross-icon::after {
       transform: rotate(90deg); }
-
-.overflow {
-  overflow: hidden; }
 
 .card {
   display: -webkit-box;
@@ -377,7 +425,9 @@ li {
           margin-top: 3.4rem; } }
     .header .header-top__main-logo {
       margin-right: 5rem;
-      padding-top: 1rem; }
+      padding-top: 1rem;
+      width: 14.2rem;
+      height: auto; }
       @media (max-width: 68.75em) {
         .header .header-top__main-logo {
           margin-right: 0rem; } }
@@ -626,7 +676,7 @@ li {
   .footer__image-dron {
     position: absolute;
     top: 15rem;
-    left: 10rem;
+    left: 6rem;
     width: 35%;
     height: auto; }
     @media (max-width: 68.75em) {

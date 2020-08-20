@@ -39,10 +39,10 @@
    &__main-logo {
       margin-right: 5rem;
       padding-top: 1rem;
+      width: 14.2rem;
+      height: auto;
 
-      @include respond(bp2) {
-         margin-right: 0rem;
-      }
+      @include respond(bp2) {margin-right: 0rem;}
       @include respond(bp9) {margin-bottom: 2rem;}
    }
 
@@ -167,4 +167,5 @@
       text-decoration: none;
    }
 }
+
 }
