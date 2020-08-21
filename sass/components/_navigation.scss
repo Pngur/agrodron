@@ -4,6 +4,7 @@
    margin-top: 2rem;
 
    @include respond(bp2) {
+      overflow: auto;
       display: none;
       margin: 0;
       position: fixed;
@@ -14,16 +15,11 @@
       height: 100vh;
       width: 100vw;
       z-index: 2000;
-      &.toggle-js {
-         display: flex; 
-         flex-direction: column; 
-         align-items: flex-end;
-         justify-content: unset;}
-   }
+      flex-direction: column; 
+      align-items: flex-end;
+      justify-content: unset;
 
-   @media (max-height: 30.31em) {
-      height: 100%;
-      width: 100%;
+      &.toggle-js {display: flex;}
    }
 
    &__list {
@@ -35,20 +31,15 @@
          flex-direction: column;
          text-align: end;
          margin-top: 1.3rem;
-         margin-right: 2rem;
+         margin-right: 3rem;
       }
-
       @include respond(bp4) {
          margin-right: -1rem;
       }
-
-
    }
    
    &__item {
-      @include respond(bp2) {
-         padding: 2rem;
-      }
+      @include respond(bp2) {padding: 2rem;}
    }
 
    &__link {
@@ -78,33 +69,26 @@
          padding: 1rem;
          border-radius: 5px;
          background-color: #5c9230;
-   
-         @include respond(bp2) {
-            background-color: #222;
-         }
+         @include respond(bp2) {background-color: #222;}
       }
-
-
    }
 }
 
 .language {
+   @include flexbox;
    color: #9EB2B8;
    font-size: 1.2rem;
    margin-right: 2.8rem;
    & > *:not(:last-child) {padding-right: .5rem;}
 
    @include respond(bp2) {
-      margin-top: 25vh;
-      margin-right: 5rem;
+      margin-top: 18rem;
+      margin-right: 6rem;
       font-size: 2.4rem;
       font-weight: 700;
    }
-   @include respond(bp4) {
-      margin-right: 2rem;
-   }
 
-   @include flexbox;
+   @include respond(bp4) {margin-right: 2rem;}
       &__link {
          font-size: 1.2rem;
          color: #9EB2B8;
@@ -113,6 +97,7 @@
             font-size: 2.4rem;
             font-weight: 700;
          }
+
          &:link,
          &:visited {
             &__link {
@@ -125,7 +110,6 @@
 }
 
 .mobile-menu {
-   display: none;
    align-items: center;
    justify-content: center;
    height: 5.5rem;
@@ -136,17 +120,35 @@
    right: 1.5rem;
    z-index: 2000;
 
-   @include respond(bp4) {
-      right: -1rem;
+   @include respond(bp4) {right: -1rem;}
+   @include respond(bp2) {display: flex;}
+
+   &--burger {
+      display: none;
+      @include respond(bp2) {
+         &.toggle-js {display: flex;}
+      }
    }
 
-   @include respond(bp2) {
-      display: flex;
+   &--cross {
+      display: none;
+      position: absolute;
+      top: 4rem;
+      right: 4rem;
+      @include respond(bp2) {
+         &.toggle-js {display: flex;}
+      }
+      @include respond(bp4) {
+         right: .5rem;
+         top: 7rem;
+      }
+      @media (max-height: 375px) {
+         top: 7rem;
+      }
    }
 
    &__burger-icon {
       position: absolute;
-
       &,
       &::before,
       &::after {
@@ -162,29 +164,26 @@
           position: absolute;
           left: 0;
       }
-   
       &::before {top: -1rem;}
       &::after {top: 1rem;}
    }
 
    &__cross-icon {
-      position: fixed;
+      position: absolute;
       transform: rotate(135deg);
-
       &,
       &::after {
-           width: 25px;
-           height: 3px;
-          background-color: $color-white;
-          display: inline-block;
+         width: 25px;
+         height: 3px;
+         background-color: $color-white;
+         display: inline-block;
       }
    
       &::after {
-          content: "";
-          position: absolute;
-          left: 0;
+         content: "";
+         position: absolute;
+         left: 0;
       }
-   
       &::after {transform: rotate(90deg);}
    }
 }

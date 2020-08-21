@@ -1,25 +1,22 @@
-const burgerButton = document.querySelector('.mobile-menu');
-const burgerClass = document.querySelector('.mobile-menu__burger-icon');
-const mobileMenu = document.querySelector('.navigation');
-const linkList = document.querySelector('.navigation__list');
-const linkItems = document.querySelectorAll('.navigation__link');
-const bodyTag = document.body;
+const burgerButton = document.querySelector('.mobile-menu--burger'),
+      burgerButtonCross = document.querySelector('.mobile-menu--cross'),
+      burgerClass = document.querySelector('.mobile-menu__burger-icon'),
+      mobileMenu = document.querySelector('.navigation'),
+      linkList = document.querySelector('.navigation__list'),
+      linkItems = document.querySelectorAll('.navigation__link'),
+      bodyTag = document.body;
 
-burgerButton.addEventListener('click', function(e) {
-   
-   mobileMenu.classList.toggle('toggle-js');
-   if (burgerClass.classList.contains('mobile-menu__burger-icon')) {
-      burgerClass.classList.remove('mobile-menu__burger-icon'); 
-      burgerClass.classList.add('mobile-menu__cross-icon'); 
-   } else {
-      burgerClass.classList.remove('mobile-menu__cross-icon'); 
-      burgerClass.classList.add('mobile-menu__burger-icon'); 
-   }
-   
+  burgerButton.addEventListener('click', function(e) {
+    mobileMenu.classList.toggle('toggle-js');
+    burgerButton.classList.toggle('toggle-js');
+});
+
+burgerButtonCross.addEventListener('click', function(e) {
+  mobileMenu.classList.toggle('toggle-js');
+  burgerButton.classList.toggle('toggle-js');
 });
 
 linkList.addEventListener('click', function(e) {
-
    for (let i of linkItems) {
       if (i === e.target) {
          mobileMenu.classList.toggle('toggle-js')
