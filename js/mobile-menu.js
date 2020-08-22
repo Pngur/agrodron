@@ -4,7 +4,8 @@ const burgerButton = document.querySelector('.mobile-menu--burger'),
       mobileMenu = document.querySelector('.navigation'),
       linkList = document.querySelector('.navigation__list'),
       linkItems = document.querySelectorAll('.navigation__link'),
-      bodyTag = document.body;
+      linksBox = document.querySelector('.language'),
+      linkLang = document.querySelectorAll('.language__link');
 
   burgerButton.addEventListener('click', function(e) {
     mobileMenu.classList.toggle('toggle-js');
@@ -82,3 +83,17 @@ btn.on('click', function(e) {
   $('html, body').animate({scrollTop:0}, '300');
 });
 
+// console.log(linksBox);
+// Переключение языков
+// linksBox.addEventListener('click', function(e) {
+//   // e.preventDefault();
+//   let target = e.target;
+
+
+//   if (target === linkLang) {
+//     linkLang.classList.toggle('language__link--active')
+//   } else {
+//     console.log('noi');
+//   };
+
+// });

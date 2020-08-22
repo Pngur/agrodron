@@ -194,11 +194,13 @@ li {
       .language__link {
         font-size: 2.4rem;
         font-weight: 700; } }
-    .language__link:link__link, .language__link:visited__link {
-      font-size: 1.2rem;
-      color: #9EB2B8; }
-    .language__link:link:hover, .language__link:visited:hover {
-      color: #88CA82; }
+  .language__link--active {
+    color: #88CA82; }
+  .language__link:hover {
+    color: #88CA82; }
+  .language__link:link__link, .language__link:visited__link {
+    font-size: 1.2rem;
+    color: #9EB2B8; }
 
 .mobile-menu {
   align-items: center;
@@ -327,6 +329,8 @@ li {
     @media (max-width: 33.75em) {
       .card__text-box-left {
         padding: 6rem 4rem 2rem 3rem; } }
+    .card__text-box-left--ro {
+      padding: 2rem 5rem 2rem 3rem; }
   .card__image-box {
     display: -webkit-box;
     /* OLD - iOS 6-, Safari 3.1-6, BB7 */
@@ -878,6 +882,14 @@ li {
       @media (max-width: 33.75em) {
         .text-block__box--1 {
           margin: 4rem 0rem 0rem 0rem; } }
+  .text-block__heading--ro {
+    padding: 0rem 25rem 2rem 0rem; }
+    @media (max-width: 43.75em) {
+      .text-block__heading--ro {
+        padding: 0rem 21rem 2rem 0rem; } }
+    @media (max-width: 33.75em) {
+      .text-block__heading--ro {
+        padding: 0rem 14.5rem 2rem 0rem; } }
   .text-block__heading--1 {
     padding: 0rem 13rem 2rem 0rem; }
     @media (max-width: 43.75em) {
@@ -888,8 +900,9 @@ li {
   .text-block__list {
     color: #fff; }
     @media (max-width: 33.75em) {
-      .text-block__list--1 {
-        width: 300px; } }
+      .text-block__list--ro {
+        width: 300px;
+        margin-right: 2rem; } }
     .text-block__list--2 {
       padding-left: 2rem; }
     .text-block__list > * {
@@ -907,3 +920,12 @@ li {
     @media (max-width: 33.75em) {
       .text-block__paragraph {
         width: 22.7rem; } }
+  .text-block__paragraph-ro {
+    width: 41rem; }
+    @media (max-width: 43.75em) {
+      .text-block__paragraph-ro {
+        width: 34.3rem;
+        font-size: 1.5rem; } }
+    @media (max-width: 33.75em) {
+      .text-block__paragraph-ro {
+        width: 23.7rem; } }

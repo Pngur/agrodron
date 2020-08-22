@@ -97,14 +97,18 @@
             font-size: 2.4rem;
             font-weight: 700;
          }
+   }
 
-         &:link,
-         &:visited {
-            &__link {
-               font-size: 1.2rem;
-               color: #9EB2B8;
+   &__link {
+      &--active {color: #88CA82;}
+      
+      &:hover {color: #88CA82;}
+      &:link,
+      &:visited {
+         &__link {
+            font-size: 1.2rem;
+            color: #9EB2B8;
          }
-         &:hover {color: #88CA82;}
       }
    }
 }
