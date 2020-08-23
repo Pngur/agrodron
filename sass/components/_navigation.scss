@@ -31,7 +31,7 @@
          flex-direction: column;
          text-align: end;
          margin-top: 1.3rem;
-         margin-right: 3rem;
+         margin-right: 2rem;
       }
       @include respond(bp4) {
          margin-right: -1rem;
@@ -83,7 +83,7 @@
 
    @include respond(bp2) {
       margin-top: 18rem;
-      margin-right: 6rem;
+      margin-right: 5rem;
       font-size: 2.4rem;
       font-weight: 700;
    }
@@ -138,16 +138,16 @@
       display: none;
       position: absolute;
       top: 4rem;
-      right: 4rem;
+      right: 3rem;
       @include respond(bp2) {
          &.toggle-js {display: flex;}
       }
       @include respond(bp4) {
          right: .5rem;
-         top: 7rem;
+         top: 4rem;
       }
       @media (max-height: 375px) {
-         top: 7rem;
+         top: 4rem;
       }
    }
 

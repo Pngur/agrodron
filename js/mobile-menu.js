@@ -3,11 +3,9 @@ const burgerButton = document.querySelector('.mobile-menu--burger'),
       burgerClass = document.querySelector('.mobile-menu__burger-icon'),
       mobileMenu = document.querySelector('.navigation'),
       linkList = document.querySelector('.navigation__list'),
-      linkItems = document.querySelectorAll('.navigation__link'),
-      linksBox = document.querySelector('.language'),
-      linkLang = document.querySelectorAll('.language__link');
+      linkItems = document.querySelectorAll('.navigation__link');
 
-  burgerButton.addEventListener('click', function(e) {
+burgerButton.addEventListener('click', function(e) {
     mobileMenu.classList.toggle('toggle-js');
     burgerButton.classList.toggle('toggle-js');
 });
@@ -66,7 +64,6 @@ $('a[href*="#"]')
     }
   });
 
-
 // Скроллинг вверх   
 const btn = $('#button');
 
@@ -82,18 +79,3 @@ btn.on('click', function(e) {
   e.preventDefault();
   $('html, body').animate({scrollTop:0}, '300');
 });
-
-// console.log(linksBox);
-// Переключение языков
-// linksBox.addEventListener('click', function(e) {
-//   // e.preventDefault();
-//   let target = e.target;
-
-
-//   if (target === linkLang) {
-//     linkLang.classList.toggle('language__link--active')
-//   } else {
-//     console.log('noi');
-//   };
-
-// });

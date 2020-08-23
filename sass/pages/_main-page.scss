@@ -119,9 +119,8 @@
    overflow: hidden;
 
    &--2 {
-      padding: 7rem 0 0rem 15rem;
-      & > *:first-child {padding-bottom: 3rem;}
-      @include respond(bp5) {padding: 7rem 0rem 0rem 7rem;}
+      padding: 9rem 0 0rem 15rem;
+      @include respond(bp5) {padding: 9rem 0rem 0rem 7rem;}
       @include respond(bp4) {padding: 5rem 0 0rem 2rem; }
    }
 
@@ -158,6 +157,8 @@
          @include respond(bp8) {padding: 0rem 11rem 2rem 0rem;}
       }
 
+      &--2 {padding-bottom: 3rem;}
+
       &--3 {
          padding:0rem 2rem 1.7rem 0rem;
       }
@@ -165,6 +166,8 @@
 
    &__list {
       color: $color-white;
+      & > * {line-height: 1.4; @include listStyle;}
+
       &--ro {
          @include respond(bp4) { 
             width: 300px;
@@ -172,21 +175,24 @@
          }
       }
 
-      &--2 {padding-left: 2rem;}
-      & > * {line-height: 1.4; @include listStyle;}
+      &--2 {
+         padding-left: 2rem;
+      }
    } 
    
    &__item {
       @include respond(bp8) {font-size: 1.5rem;}
+      text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.25); 
    }
 
    &__paragraph {
-      width: 39rem;
+      width: 41rem;
+      text-shadow: 1px 2px 5px rgba(0, 0, 0, 0.25);
       @include respond(bp8) {
-         width: 33rem;
+         width: 34.5rem;
          font-size: 1.5rem;
       }
-      @include respond(bp4) {width: 22.7rem;}
+      @include respond(bp4) {width: 23.7rem;}
    }
    &__paragraph-ro {
       width: 41rem;
