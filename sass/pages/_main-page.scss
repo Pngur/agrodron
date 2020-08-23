@@ -150,18 +150,17 @@
          padding: 0rem 25rem 2rem 0rem;
          @include respond(bp8) {padding: 0rem 21rem 2rem 0rem;}
          @include respond(bp4) {padding: 0rem 14.5rem 2rem 0rem;}
+         @include respond(bp9) {padding: 0rem 11.5rem 2rem 0rem;}
       }
 
       &--1 {
          padding: 0rem 13rem 2rem 0rem;
          @include respond(bp8) {padding: 0rem 11rem 2rem 0rem;}
+         @include respond(bp4) {padding: 0rem 23rem 2rem 0rem;}
+         @include respond(bp9) {padding: 0rem 11.5rem 2rem 0rem;}
       }
-
       &--2 {padding-bottom: 3rem;}
-
-      &--3 {
-         padding:0rem 2rem 1.7rem 0rem;
-      }
+      &--3 {padding:0rem 2rem 1.7rem 0rem;}
    }
 
    &__list {
@@ -173,11 +172,11 @@
             width: 300px;
             margin-right: 2rem;
          }
+         @include respond(bp9) {width: 275px;}
       }
 
-      &--2 {
-         padding-left: 2rem;
-      }
+      &--1 { @include respond(bp9) {width: 300px;}}
+      &--2 {padding-left: 2rem;}
    } 
    
    &__item {
@@ -186,14 +185,15 @@
    }
 
    &__paragraph {
-      width: 41rem;
+      width: 39rem;
       text-shadow: 1px 2px 5px rgba(0, 0, 0, 0.25);
       @include respond(bp8) {
-         width: 34.5rem;
+         width: 33rem;
          font-size: 1.5rem;
       }
-      @include respond(bp4) {width: 23.7rem;}
+      @include respond(bp4) {width: 22.7rem;}
    }
+
    &__paragraph-ro {
       width: 41rem;
       @include respond(bp8) {

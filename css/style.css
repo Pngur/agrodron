@@ -889,11 +889,20 @@ li {
     @media (max-width: 33.75em) {
       .text-block__heading--ro {
         padding: 0rem 14.5rem 2rem 0rem; } }
+    @media (max-width: 25.75em) {
+      .text-block__heading--ro {
+        padding: 0rem 11.5rem 2rem 0rem; } }
   .text-block__heading--1 {
     padding: 0rem 13rem 2rem 0rem; }
     @media (max-width: 43.75em) {
       .text-block__heading--1 {
         padding: 0rem 11rem 2rem 0rem; } }
+    @media (max-width: 33.75em) {
+      .text-block__heading--1 {
+        padding: 0rem 23rem 2rem 0rem; } }
+    @media (max-width: 25.75em) {
+      .text-block__heading--1 {
+        padding: 0rem 11.5rem 2rem 0rem; } }
   .text-block__heading--2 {
     padding-bottom: 3rem; }
   .text-block__heading--3 {
@@ -907,6 +916,12 @@ li {
       .text-block__list--ro {
         width: 300px;
         margin-right: 2rem; } }
+    @media (max-width: 25.75em) {
+      .text-block__list--ro {
+        width: 275px; } }
+    @media (max-width: 25.75em) {
+      .text-block__list--1 {
+        width: 300px; } }
     .text-block__list--2 {
       padding-left: 2rem; }
   .text-block__item {
@@ -915,15 +930,15 @@ li {
       .text-block__item {
         font-size: 1.5rem; } }
   .text-block__paragraph {
-    width: 41rem;
+    width: 39rem;
     text-shadow: 1px 2px 5px rgba(0, 0, 0, 0.25); }
     @media (max-width: 43.75em) {
       .text-block__paragraph {
-        width: 34.5rem;
+        width: 33rem;
         font-size: 1.5rem; } }
     @media (max-width: 33.75em) {
       .text-block__paragraph {
-        width: 23.7rem; } }
+        width: 22.7rem; } }
   .text-block__paragraph-ro {
     width: 41rem; }
     @media (max-width: 43.75em) {
