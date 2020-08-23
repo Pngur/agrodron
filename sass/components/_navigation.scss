@@ -2,7 +2,6 @@
    @include flexbox;
    @include flexCenter;
    margin-top: 2rem;
-
    @include respond(bp2) {
       overflow: auto;
       display: none;

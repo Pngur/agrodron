@@ -18,11 +18,10 @@ burgerButtonCross.addEventListener('click', function(e) {
 linkList.addEventListener('click', function(e) {
    for (let i of linkItems) {
       if (i === e.target) {
-         mobileMenu.classList.toggle('toggle-js')
-         burgerClass.classList.remove('mobile-menu__cross-icon'); 
-         burgerClass.classList.add('mobile-menu__burger-icon'); 
+         mobileMenu.classList.toggle('toggle-js');
+         burgerButton.classList.add('toggle-js'); 
         };
-   }
+      }
 });
 
 //Плавный скроллинг
