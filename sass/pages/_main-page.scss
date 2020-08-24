@@ -10,12 +10,11 @@
       padding: 2rem 0;
    }
 
-   &__paragraph {max-width: 73rem;     }
+   &__paragraph {max-width: 73rem;}
    & > *:not(:last-child) {margin-bottom: 3rem;}
 }
 
 .service-card {
-   
    @include respond(bp8) {
     flex-direction: column;
     justify-content: center;

@@ -114,7 +114,12 @@ li {
       z-index: 2000;
       flex-direction: column;
       align-items: flex-end;
-      justify-content: unset; }
+      justify-content: unset; } }
+  @media (max-width: 68.75em) and (max-height: 25em) {
+    .navigation {
+      align-items: center;
+      justify-content: center; } }
+  @media (max-width: 68.75em) {
       .navigation.toggle-js {
         display: flex; } }
   .navigation__list {
@@ -136,6 +141,10 @@ li {
     @media (max-width: 33.75em) {
       .navigation__list {
         margin-right: -1rem; } }
+    @media (max-height: 25em) {
+      .navigation__list {
+        text-align: center;
+        margin-bottom: 2rem; } }
   @media (max-width: 68.75em) {
     .navigation__item {
       padding: 2rem; } }
@@ -194,6 +203,9 @@ li {
       .language__link {
         font-size: 2.4rem;
         font-weight: 700; } }
+  @media (max-height: 25em) {
+    .language {
+      margin-right: 2rem; } }
   .language__link--active {
     color: #88CA82; }
   .language__link:hover {
@@ -218,26 +230,6 @@ li {
   @media (max-width: 68.75em) {
     .mobile-menu {
       display: flex; } }
-  .mobile-menu--burger {
-    display: none; }
-    @media (max-width: 68.75em) {
-      .mobile-menu--burger.toggle-js {
-        display: flex; } }
-  .mobile-menu--cross {
-    display: none;
-    position: absolute;
-    top: 4rem;
-    right: 3rem; }
-    @media (max-width: 68.75em) {
-      .mobile-menu--cross.toggle-js {
-        display: flex; } }
-    @media (max-width: 33.75em) {
-      .mobile-menu--cross {
-        right: .5rem;
-        top: 7rem; } }
-    @media (max-height: 375px) {
-      .mobile-menu--cross {
-        top: 4rem; } }
   .mobile-menu__burger-icon {
     position: absolute; }
     .mobile-menu__burger-icon, .mobile-menu__burger-icon::before, .mobile-menu__burger-icon::after {
@@ -254,7 +246,7 @@ li {
     .mobile-menu__burger-icon::after {
       top: 1rem; }
   .mobile-menu__cross-icon {
-    position: absolute;
+    position: fixed;
     transform: rotate(135deg); }
     .mobile-menu__cross-icon, .mobile-menu__cross-icon::after {
       width: 25px;

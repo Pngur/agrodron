@@ -1,25 +1,26 @@
-const burgerButton = document.querySelector('.mobile-menu--burger'),
-      burgerButtonCross = document.querySelector('.mobile-menu--cross'),
-      burgerClass = document.querySelector('.mobile-menu__burger-icon'),
-      mobileMenu = document.querySelector('.navigation'),
+const burgerClass = document.querySelector('.mobile-menu__burger-icon'),
+      navMenu = document.querySelector('.navigation'),
+      mobileMenu = document.querySelector('.mobile-menu'),
       linkList = document.querySelector('.navigation__list'),
       linkItems = document.querySelectorAll('.navigation__link');
 
-burgerButton.addEventListener('click', function(e) {
-    mobileMenu.classList.toggle('toggle-js');
-    burgerButton.classList.toggle('toggle-js');
-});
-
-burgerButtonCross.addEventListener('click', function(e) {
-  mobileMenu.classList.toggle('toggle-js');
-  burgerButton.classList.toggle('toggle-js');
+mobileMenu.addEventListener('click', function() {
+  navMenu.classList.toggle('toggle-js');
+  if (burgerClass.classList.contains('mobile-menu__burger-icon')) {
+      burgerClass.classList.remove('mobile-menu__burger-icon');
+      burgerClass.classList.add('mobile-menu__cross-icon');
+  } else {
+    burgerClass.classList.remove('mobile-menu__cross-icon');
+    burgerClass.classList.add('mobile-menu__burger-icon');
+  }
 });
 
 linkList.addEventListener('click', function(e) {
    for (let i of linkItems) {
       if (i === e.target) {
-         mobileMenu.classList.toggle('toggle-js');
-         burgerButton.classList.add('toggle-js'); 
+        navMenu.classList.toggle('toggle-js');
+        burgerClass.classList.remove('mobile-menu__cross-icon');
+        burgerClass.classList.add('mobile-menu__burger-icon');
         };
       }
 });
