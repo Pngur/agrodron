@@ -234,7 +234,7 @@ li {
     @media (max-width: 33.75em) {
       .mobile-menu--cross {
         right: .5rem;
-        top: 4rem; } }
+        top: 7rem; } }
     @media (max-height: 375px) {
       .mobile-menu--cross {
         top: 4rem; } }
@@ -940,7 +940,8 @@ li {
       .text-block__paragraph {
         width: 22.7rem; } }
   .text-block__paragraph-ro {
-    width: 41rem; }
+    width: 41rem;
+    text-shadow: 1px 2px 5px rgba(0, 0, 0, 0.25); }
     @media (max-width: 43.75em) {
       .text-block__paragraph-ro {
         width: 34.3rem;
