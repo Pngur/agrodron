@@ -215,6 +215,7 @@ li {
     color: #9EB2B8; }
 
 .mobile-menu {
+  display: none;
   align-items: center;
   justify-content: center;
   height: 5.5rem;
